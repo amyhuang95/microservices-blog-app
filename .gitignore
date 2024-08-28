@@ -141,5 +141,4 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode/
-.mjs
-
+eslint.config.mjs

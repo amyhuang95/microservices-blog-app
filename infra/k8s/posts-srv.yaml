@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: posts-srv
+spec:
+  type: NodePort # type of service
+  selector:
+    app: posts
+  ports: # array of all application ports to be exposed on the pod
+    - name: posts
+      protocol: TCP
+      port: 4000 # port on the service to receive request
+      targetPort: 4000 # actual port of the application to receive requests

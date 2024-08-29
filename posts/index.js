@@ -29,7 +29,7 @@ app.get("/posts", (req, res) => {
 });
 
 // Create service to Post (add) a new post
-app.post("/posts", async (req, res) => {
+app.post("/posts/create", async (req, res) => {
   // Create a random id of 4 digits hex number
   const id = randomBytes(4).toString("hex");
   // Get the title from user's response
